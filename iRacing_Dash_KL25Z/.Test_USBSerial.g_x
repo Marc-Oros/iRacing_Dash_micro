@@ -1,0 +1,128 @@
+<CodeGenerationInfo>
+  <ToolchainSettings>
+    <option>
+      <name>PE_G_4PEx_ToolChain_Compiler_SearchUserPaths</name>
+      <values lines_count="4">
+        <Line>"${ProcessorExpertPath}/lib/Kinetis/pdd/inc"</Line>
+        <Line>"${ProcessorExpertPath}/lib/Kinetis/iofiles"</Line>
+        <Line>"${ProjDirPath}/Sources"</Line>
+        <Line>"${ProjDirPath}/Generated_Code"</Line>
+      </values>
+    </option>
+  </ToolchainSettings>
+  <GeneratedFilesList>
+    <GeneratedByPE>
+      <File Name="Generated_Code/USB1.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479476" FileType="45637" CompNumb="6" />
+      <File Name="Generated_Code/CDC1.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479576" FileType="45637" CompNumb="8" />
+      <File Name="Generated_Code/USB1.c" FileDate="2018-05-07, 17:04:39" FileAge="1525705479473" FileType="45637" CompNumb="6" />
+      <File Name="Generated_Code/USB0.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479499" FileType="45637" CompNumb="21" />
+      <File Name="Generated_Code/MCUC1config.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479724" FileType="45637" CompNumb="11" />
+      <File Name="Generated_Code/usb_descriptor.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479550" FileType="45637" CompNumb="8" />
+      <File Name="Generated_Code/CDC1.c" FileDate="2018-05-07, 17:04:39" FileAge="1525705479570" FileType="45637" CompNumb="8" />
+      <File Name="Generated_Code/usb_dci_kinetis.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479443" FileType="45637" CompNumb="6" />
+      <File Name="Generated_Code/USB0.c" FileDate="2018-05-07, 17:04:39" FileAge="1525705479492" FileType="45637" CompNumb="21" />
+      <File Name="Static_Code/PDD/COP_PDD.h" FileDate="2014-02-20, 14:18:46" FileAge="1392902326000" FileType="262144" />
+      <File Name="Static_Code/PDD/TPM_PDD.h" FileDate="2014-02-20, 14:18:46" FileAge="1392902326000" FileType="262144" />
+      <File Name="Generated_Code/usb_descriptor.c" FileDate="2018-05-07, 17:04:39" FileAge="1525705479542" FileType="45637" CompNumb="8" />
+      <File Name="Generated_Code/PE_LDD.h" FileDate="2018-05-07, 17:13:13" FileAge="1525705993239" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/usb_dci_kinetis.c" FileDate="2018-05-07, 17:04:39" FileAge="1525705479436" FileType="45637" CompNumb="6" />
+      <File Name="Generated_Code/MCUC1.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479736" FileType="45637" CompNumb="11" />
+      <File Name="Static_Code/PDD/SysTick_PDD.h" FileDate="2014-02-20, 14:18:46" FileAge="1392902326000" FileType="262144" />
+      <File Name="Generated_Code/usb_cdc.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479512" FileType="45637" CompNumb="8" />
+      <File Name="Generated_Code/PE_LDD.c" FileDate="2018-05-07, 15:13:42" FileAge="1525698822164" FileType="45637" CompNumb="2" />
+      <File Name="Documentation/Test_USBSerial_SIGNALS.txt" FileDate="2018-05-07, 17:13:13" FileAge="1525705993301" FileType="3072" />
+      <File Name="Generated_Code/MCUC1.c" FileDate="2018-05-07, 17:04:39" FileAge="1525705479727" FileType="45637" CompNumb="11" />
+      <File Name="Project_Settings/Linker_Files/ProcessorExpert.ld" FileDate="2018-05-07, 15:13:42" FileAge="1525698822154" FileType="8" CompNumb="2" />
+      <File Name="Generated_Code/usb_cdc.c" FileDate="2018-05-07, 17:04:39" FileAge="1525705479510" FileType="45637" CompNumb="8" />
+      <File Name="Documentation/doxygen/Test_USBSerial.txt" FileDate="2018-05-07, 17:04:39" FileAge="1525705479819" FileType="45637" CompNumb="2" />
+      <File Name="Documentation/Test_USBSerial.txt" FileDate="2018-05-07, 17:13:16" FileAge="1525705996294" FileType="3072" />
+      <File Name="Static_Code/PDD/CMP_PDD.h" FileDate="2014-02-20, 14:18:46" FileAge="1392902326000" FileType="262144" />
+      <File Name="Generated_Code/usb_user_config.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479526" FileType="45637" CompNumb="8" />
+      <File Name="Generated_Code/types.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479457" FileType="45637" CompNumb="6" />
+      <File Name="Generated_Code/PE_Error.h" FileDate="2018-05-07, 15:13:42" FileAge="1525698822222" FileType="45637" />
+      <File Name="Documentation/cdc.inf_readme.txt" FileDate="2018-05-07, 17:04:39" FileAge="1525705479559" FileType="45637" CompNumb="8" />
+      <File Name="Documentation/doxygen/USB0.txt" FileDate="2018-05-07, 17:04:39" FileAge="1525705479481" FileType="45637" CompNumb="21" />
+      <File Name="Generated_Code/usb_class.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479395" FileType="45637" CompNumb="6" />
+      <File Name="Generated_Code/FSL_USB_Stack_Config.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479382" FileType="45637" CompNumb="6" />
+      <File Name="Generated_Code/Rx1.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479594" FileType="45637" CompNumb="10" />
+      <File Name="Generated_Code/usb_class.c" FileDate="2018-05-07, 17:04:39" FileAge="1525705479392" FileType="45637" CompNumb="6" />
+      <File Name="Project_Settings/Debugger/MKL25Z128.mem" FileDate="2018-05-07, 15:13:42" FileAge="1525698822164" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/Rx1.c" FileDate="2018-05-07, 17:04:39" FileAge="1525705479588" FileType="45637" CompNumb="10" />
+      <File Name="Static_Code/PDD/FTFA_PDD.h" FileDate="2014-02-20, 14:18:46" FileAge="1392902326000" FileType="262144" />
+      <File Name="Generated_Code/CLS1config.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479658" FileType="45637" CompNumb="13" />
+      <File Name="Generated_Code/TMOUT1.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479655" FileType="45637" CompNumb="14" />
+      <File Name="Static_Code/PDD/DMA_PDD.h" FileDate="2014-02-20, 14:18:46" FileAge="1392902326000" FileType="262144" />
+      <File Name="Generated_Code/IO_Map.h" FileDate="2018-05-07, 15:13:42" FileAge="1525698822217" FileType="45637" />
+      <File Name="Generated_Code/CS1config.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479713" FileType="45637" CompNumb="16" />
+      <File Name="Generated_Code/TMOUT1.c" FileDate="2018-05-07, 17:04:39" FileAge="1525705479646" FileType="45637" CompNumb="14" />
+      <File Name="Static_Code/PDD/SPI_PDD.h" FileDate="2014-02-20, 14:18:46" FileAge="1392902326000" FileType="262144" />
+      <File Name="Static_Code/PDD/SIM_PDD.h" FileDate="2014-05-14, 13:09:28" FileAge="1400065768000" FileType="262144" />
+      <File Name="Static_Code/PDD/ADC_PDD.h" FileDate="2014-02-20, 14:18:46" FileAge="1392902326000" FileType="262144" />
+      <File Name="Static_Code/PDD/DAC_PDD.h" FileDate="2014-02-20, 14:18:46" FileAge="1392902326000" FileType="262144" />
+      <File Name="Static_Code/PDD/PDD_Types.h" FileDate="2013-04-18, 01:55:42" FileAge="1366242942000" FileType="262144" />
+      <File Name="Sources/main.c" FileDate="2018-05-07, 17:13:06" FileAge="1525705986596" FileType="128" />
+      <File Name="Static_Code/PDD/PORT_PDD.h" FileDate="2014-02-20, 14:18:46" FileAge="1392902326000" FileType="262144" />
+      <File Name="Documentation/doxygen/pex.doxyfile" FileDate="2018-05-07, 15:13:42" FileAge="1525698822178" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/UTIL1config.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479694" FileType="45637" CompNumb="18" />
+      <File Name="Generated_Code/USB1config.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479471" FileType="45637" CompNumb="6" />
+      <File Name="Generated_Code/usb_framework.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479407" FileType="45637" CompNumb="6" />
+      <File Name="Generated_Code/hidef.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479460" FileType="45637" CompNumb="6" />
+      <File Name="Generated_Code/usb_framework.c" FileDate="2018-05-07, 17:04:39" FileAge="1525705479405" FileType="45637" CompNumb="6" />
+      <File Name="Static_Code/PDD/UART_PDD.h" FileDate="2014-02-20, 14:18:46" FileAge="1392902326000" FileType="262144" />
+      <File Name="Generated_Code/usb_devapi.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479413" FileType="45637" CompNumb="6" />
+      <File Name="Generated_Code/TMOUT1config.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479639" FileType="45637" CompNumb="14" />
+      <File Name="Static_Code/PDD/PIT_PDD.h" FileDate="2014-02-20, 14:18:46" FileAge="1392902326000" FileType="262144" />
+      <File Name="Generated_Code/usb_driver.c" FileDate="2018-05-07, 17:04:39" FileAge="1525705479423" FileType="45637" CompNumb="6" />
+      <File Name="Generated_Code/XF1.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479692" FileType="45637" CompNumb="19" />
+      <File Name="Static_Code/PDD/UART0_PDD.h" FileDate="2014-02-20, 14:18:46" FileAge="1392902326000" FileType="262144" />
+      <File Name="ProjectInfo.xml" FileDate="2018-05-07, 17:13:16" FileAge="1525705996275" FileType="45637" />
+      <File Name="Generated_Code/XF1.c" FileDate="2018-05-07, 17:04:39" FileAge="1525705479688" FileType="45637" CompNumb="19" />
+      <File Name="Generated_Code/CDC1config.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479561" FileType="45637" CompNumb="8" />
+      <File Name="Generated_Code/derivative.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479451" FileType="45637" CompNumb="6" />
+      <File Name="Generated_Code/Vectors.c" FileDate="2018-05-07, 17:13:13" FileAge="1525705993252" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/wdt_kinetis.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479463" FileType="45637" CompNumb="6" />
+      <File Name="Static_Code/PDD/DMAMUX_PDD.h" FileDate="2014-02-20, 14:18:46" FileAge="1392902326000" FileType="262144" />
+      <File Name="Generated_Code/WAIT1.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479637" FileType="45637" CompNumb="15" />
+      <File Name="Documentation/Test_USBSerial_Settings.xml" FileDate="2018-05-07, 17:13:13" FileAge="1525705993455" FileType="3072" />
+      <File Name="Generated_Code/Tx1config.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479597" FileType="45637" CompNumb="9" />
+      <File Name="Generated_Code/wdt_kinetis.c" FileDate="2018-05-07, 17:04:39" FileAge="1525705479465" FileType="45637" CompNumb="6" />
+      <File Name="Static_Code/PDD/I2C_PDD.h" FileDate="2014-02-20, 14:18:46" FileAge="1392902326000" FileType="262144" />
+      <File Name="Generated_Code/WAIT1.c" FileDate="2018-05-07, 17:04:39" FileAge="1525705479629" FileType="45637" CompNumb="15" />
+      <File Name="Generated_Code/Cpu.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479767" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/PE_Types.h" FileDate="2018-05-07, 15:13:42" FileAge="1525698822234" FileType="45637" />
+      <File Name="Static_Code/PDD/RTC_PDD.h" FileDate="2014-02-20, 14:18:46" FileAge="1392902326000" FileType="262144" />
+      <File Name="Static_Code/PDD/MCM_PDD.h" FileDate="2014-02-20, 14:18:46" FileAge="1392902326000" FileType="262144" />
+      <File Name="Generated_Code/Cpu.c" FileDate="2018-05-07, 17:13:13" FileAge="1525705993234" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/usb_cdc_pstn.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479523" FileType="45637" CompNumb="8" />
+      <File Name="Static_Code/PDD/GPIO_PDD.h" FileDate="2014-02-20, 14:18:46" FileAge="1392902326000" FileType="262144" />
+      <File Name="Documentation/cdc.inf" FileDate="2018-05-07, 17:04:39" FileAge="1525705479555" FileType="45637" CompNumb="8" />
+      <File Name="Generated_Code/usb_cdc_pstn.c" FileDate="2018-05-07, 17:04:39" FileAge="1525705479521" FileType="45637" CompNumb="8" />
+      <File Name="Documentation/doxygen/pex.css" FileDate="2018-05-07, 15:13:41" FileAge="1525698821545" FileType="16384" CompNumb="2" />
+      <File Name="Generated_Code/XF1config.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479678" FileType="45637" CompNumb="19" />
+      <File Name="Generated_Code/CS2config.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479614" FileType="45637" CompNumb="17" />
+      <File Name="Documentation/doxygen/RoutingReport.txt" FileDate="2018-05-07, 15:13:42" FileAge="1525698822178" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/usb_bdt_kinetis.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479426" FileType="45637" CompNumb="6" />
+      <File Name="Static_Code/IO_Map/MKL25Z4.h" FileDate="2013-04-18, 01:55:42" FileAge="1366242942000" FileType="262144" />
+      <File Name="Generated_Code/UTIL1.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479710" FileType="45637" CompNumb="18" />
+      <File Name="Generated_Code/Tx1.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479611" FileType="45637" CompNumb="9" />
+      <File Name="Sources/Events.h" FileDate="2018-05-07, 17:13:13" FileAge="1525705993266" FileType="131328" />
+      <File Name="Generated_Code/UTIL1.c" FileDate="2018-05-07, 17:04:39" FileAge="1525705479704" FileType="45637" CompNumb="18" />
+      <File Name="Generated_Code/Rx1config.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479578" FileType="45637" CompNumb="10" />
+      <File Name="Generated_Code/Tx1.c" FileDate="2018-05-07, 17:04:39" FileAge="1525705479605" FileType="45637" CompNumb="9" />
+      <File Name="Static_Code/PDD/USB_PDD.h" FileDate="2014-02-20, 14:18:46" FileAge="1392902326000" FileType="262144" />
+      <File Name="Sources/Events.c" FileDate="2018-05-07, 15:13:41" FileAge="1525698821718" FileType="131328" />
+      <File Name="Generated_Code/CS2.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479620" FileType="45637" CompNumb="17" />
+      <File Name="Generated_Code/PE_Const.h" FileDate="2018-05-07, 15:13:42" FileAge="1525698822222" FileType="45637" />
+      <File Name="Generated_Code/usb_dciapi.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479446" FileType="45637" CompNumb="6" />
+      <File Name="Generated_Code/USB_Config.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479532" FileType="45637" CompNumb="8" />
+      <File Name="Generated_Code/CLS1.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479676" FileType="45637" CompNumb="13" />
+      <File Name="Static_Code/PDD/LPTMR_PDD.h" FileDate="2014-02-20, 14:18:46" FileAge="1392902326000" FileType="262144" />
+      <File Name="Generated_Code/CS2.c" FileDate="2018-05-07, 17:04:39" FileAge="1525705479618" FileType="45637" CompNumb="17" />
+      <File Name="Generated_Code/CS1.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479722" FileType="45637" CompNumb="16" />
+      <File Name="Generated_Code/WAIT1config.h" FileDate="2018-05-07, 17:04:39" FileAge="1525705479623" FileType="45637" CompNumb="15" />
+      <File Name="Generated_Code/CLS1.c" FileDate="2018-05-07, 17:04:39" FileAge="1525705479668" FileType="45637" CompNumb="13" />
+      <File Name="Generated_Code/CS1.c" FileDate="2018-05-07, 17:04:39" FileAge="1525705479717" FileType="45637" CompNumb="16" />
+    </GeneratedByPE>
+  </GeneratedFilesList>
+  <CodeGenReference>4</CodeGenReference>
+</CodeGenerationInfo>
