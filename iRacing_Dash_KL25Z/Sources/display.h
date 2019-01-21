@@ -1,6 +1,14 @@
 #ifndef DISPLAY_H_
 #define DISPLAY_H_
 
+#define DIO 1
+#define STB 2
+#define CLK 3
+
+#define READ_MODE 0x02
+#define WRITE_MODE 0x00
+#define INCR_ADDR 0x00
+#define FIXED_ADDR 0x04
 
 typedef struct node {
     uint8_t val;
