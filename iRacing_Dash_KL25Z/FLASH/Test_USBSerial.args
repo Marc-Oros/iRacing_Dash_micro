@@ -26,6 +26,8 @@
 "./Project_Settings/Startup_Code/__arm_end.o"
 "./Sources/sa_mtb.o"
 "./Sources/main.o"
+"./Sources/font.o"
+"./Sources/display.o"
 "./Sources/Events.o"
 -mcpu=cortex-m0
 -mthumb

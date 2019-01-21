@@ -1,4 +1,6 @@
 #include "common.h"
+#include "font.h"
+#include "display.h"
 #include "Cpu.h"
 #include "Events.h"
 #include "USB1.h"
@@ -18,7 +20,6 @@
 #include "PE_Error.h"
 #include "PE_Const.h"
 #include "IO_Map.h"
-
 
 static void CDC_Init(void) {
 	static uint8_t cdc_buffer[USB1_DATA_BUFF_SIZE];
@@ -80,11 +81,18 @@ int main(void)
 	//Inicializaciones
 	/*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
 	uint8_t buf[32];
+	uint8_t *formatted_str;
+	formatted_str = malloc(32 * sizeof(char));
 	int led = 255;
 	int speed;
 	int rpm;
 	int gear;
 	int blink = 0;
+	/*char *str;
+	str = malloc(24*sizeof(char));
+	strcpy(str, "1243.5");
+	writeStr(0, str);*/
+	initAll(3);
 	PE_low_level_init();  
 	CDC_Init();
 	initLED();
@@ -93,7 +101,20 @@ int main(void)
 		getPack(buf);
 		sscanf(buf, "%d %d %d %d", &led, &speed, &rpm, &gear);
 		gear--;
-		switch (led)
+		rpm /= 100;
+		sprintf(formatted_str, "%d %d %02d", speed, gear, rpm);
+		if (gear == 0)
+		{
+			formatted_str[2] = '-';
+		}else{
+			if (gear == -1)
+			{
+				formatted_str[2] = 'R';
+			}
+			setLEDs(led);
+			writeStr(0, formatted_str);
+		}			
+		/*switch (led)
 		{
 			case 0:
 				ledsOff();
@@ -123,7 +144,7 @@ int main(void)
 				}
 				WAIT1_Waitms(10);
 				break;
-		}		
+		}*/
 	}
 	
 }

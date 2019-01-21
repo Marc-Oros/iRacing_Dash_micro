@@ -28,3 +28,11 @@
 #define ledBlue() GPIOD_PDOR &= ~0x80002
 #define BLINK_LEN 20
 #define CONN_BLINK_LEN 100
+#define DIO 1
+#define STB 2
+#define CLK 3
+
+#define READ_MODE 0x02
+#define WRITE_MODE 0x00
+#define INCR_ADDR 0x00
+#define FIXED_ADDR 0x04
