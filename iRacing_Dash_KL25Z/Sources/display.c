@@ -2,54 +2,12 @@
 #include "display.h"
 #include "font.h"
 
-void push(node_t* origin, uint8_t value)
-{
-	if(origin->val == NULL)
-	{
-		origin->val = value;
-		origin->next = NULL;
-		origin->prev = NULL;
-	}else{
-		node_t* last = origin;
-		while(last->next != NULL)
-			last = last->next;
-		node_t* aux;
-		aux = malloc(sizeof(node_t));
-		aux->val = value;
-		aux->prev = last;
-		aux->next = NULL;
-		last->next = aux;
-	}
-}
-
-uint8_t pop(node_t* origin)
-{	
-	if (origin->val == NULL)
-	{
-		return 0;
-	}else{
-		uint8_t content;
-		node_t* last = origin;
-		while(last->next != NULL)
-			last = last->next;
-		content = last->val;
-		if (last == origin)
-		{
-			origin->val = NULL;
-		}else{
-			last = last->prev;
-			last->next = NULL;
-		}
-		return content;
-	}	
-}
-
 void setPin(uint8_t pin, uint8_t value)
 {
 	switch(pin)
 	{
 		//Pin 2
-		case DIO:
+		case STB:
 			if(value)
 			{
 				GPIOE_PDOR |= 0x00004;
@@ -58,7 +16,7 @@ void setPin(uint8_t pin, uint8_t value)
 			}
 			break;
 		//Pin 3
-		case STB:
+		case CLK:
 			if(value)
 			{
 				GPIOE_PDOR |= 0x00008;
@@ -67,7 +25,7 @@ void setPin(uint8_t pin, uint8_t value)
 			}
 			break;
 		//Pin 4
-		case CLK:
+		case DIO:
 			if(value)
 			{
 				GPIOE_PDOR |= 0x00010;
@@ -86,6 +44,8 @@ void pinInit()
 	PORTE_PCR2 = 0x100;
 	PORTE_PCR3 = 0x100;
 	PORTE_PCR4 = 0x100;
+	//Definim els pins com sortida
+	GPIOE_PDDR |= 0x1c;
 	//Inicialitzem a HIGH
 	setPin(DIO, 1);
 	setPin(CLK, 1);
@@ -150,7 +110,7 @@ void setLEDs(uint8_t num)
 	}
 	for(num; num<8; num++)
 	{
-		setLED(i, 0);
+		setLED(num, 0);
 	}
 }
 
@@ -169,7 +129,7 @@ void clearDisplay()
 
 void writeChar(uint8_t idx, uint8_t value)
 {
-	if (idx == 6)
+	if (idx == 6 && value != 0)
 	{
 		value |= 128;
 	}
@@ -187,37 +147,33 @@ void clearLEDs()
 
 void writeStr(uint8_t idx, char* str)
 {
-	node_t byte_list;
-	byte_list.val = NULL;
-	byte_list.next = NULL;
-	byte_list.prev = NULL;
+	uint8_t *buf;
+	int len = strlen(str);
+	buf = malloc(len*sizeof(uint8_t));
 	int i = 0;
 	uint8_t BCD;
-	uint8_t font_array[128];
+	uint8_t *font_array;
+	font_array = malloc(128 * sizeof(uint8_t));
 	getFontArray(font_array);
 	while(str[i] != '\0')
 	{
-		if(str[i] == '.')
-		{
-			push(&byte_list, pop(&byte_list) | 128);
-		}else{
-			BCD = font_array[(int)str[i]];
-			push(&byte_list, BCD);
-		}
+		BCD = font_array[(int)str[i]];
+		buf[i] = BCD;
 		i++;
 	}
-	int exit = 0;
-	while(!exit)
+	i = 0;
+	while(i < len)
 	{
-		writeChar(idx, byte_list.val);
-		if(byte_list.next != NULL)
-		{
-			byte_list = *(byte_list.next);
-			idx++;
-		}else{
-			exit = 1;
-		}
+		writeChar(i, buf[i]);
+		i++;
 	}
+	while(i<8)
+	{
+		writeChar(i, 0x00);
+		i++;
+	}
+	free(buf);
+	free(font_array);
 }
 
 void initAll(uint8_t bl)

@@ -64,16 +64,21 @@ void ledsOff()
 	GPIOD_PDOR |= 0x00002;
 }
 
-void getPack(uint8_t *buf)
+bool getPack(uint8_t *buf)
 {
 	int i;
+	bool empty;
 	if(CDC1_GetCharsInRxBuf() >= 13)
 	{
+		empty = 0;
 		for(i=0; i<13; i++)
 		{
 			CDC1_RecvChar(buf+i);
 		}
+	}else{
+		empty = 1;
 	}
+	return empty;
 }
 
 int main(void)
@@ -88,32 +93,35 @@ int main(void)
 	int rpm;
 	int gear;
 	int blink = 0;
-	/*char *str;
-	str = malloc(24*sizeof(char));
-	strcpy(str, "1243.5");
-	writeStr(0, str);*/
 	initAll(3);
+	writeStr(0, "LOAD");
 	PE_low_level_init();  
 	CDC_Init();
 	initLED();
 	buf[13]='\0';
-	for(;;){
-		getPack(buf);
-		sscanf(buf, "%d %d %d %d", &led, &speed, &rpm, &gear);
-		gear--;
-		rpm /= 100;
-		sprintf(formatted_str, "%d %d %02d", speed, gear, rpm);
-		if (gear == 0)
+	bool empty;
+	for(;;)
+	{
+		empty = getPack(buf);
+		if (!empty)
 		{
-			formatted_str[2] = '-';
-		}else{
-			if (gear == -1)
+			sscanf(buf, "%d %d %d %d", &led, &speed, &rpm, &gear);
+			gear--;
+			rpm /= 100;
+			sprintf(formatted_str, "%03d %01d %02d", speed, gear, rpm);
+			if (gear == 0)
 			{
-				formatted_str[2] = 'R';
+				formatted_str[4] = '-';
+			}else{
+				if (gear == -1)
+				{
+					sprintf(formatted_str, "%03d R %02d", speed, rpm);
+				}
 			}
-			setLEDs(led);
 			writeStr(0, formatted_str);
-		}			
+			setLEDs(led);
+		}				
+	}
 		/*switch (led)
 		{
 			case 0:
@@ -144,7 +152,7 @@ int main(void)
 				}
 				WAIT1_Waitms(10);
 				break;
-		}*/
-	}
+		}
+	}*/
 	
 }
