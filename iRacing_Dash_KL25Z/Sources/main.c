@@ -107,7 +107,12 @@ int main(void)
 		{
 			sscanf(buf, "%d %d %d %d", &led, &speed, &rpm, &gear);
 			gear--;
-			rpm /= 100;
+			if(rpm >= 10000)
+			{
+				rpm /= 1000;
+			}else{
+				rpm /= 100;	
+			}
 			sprintf(formatted_str, "%03d %01d %02d", speed, gear, rpm);
 			if (gear == 0)
 			{
